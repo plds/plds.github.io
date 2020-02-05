@@ -31,7 +31,7 @@ lazy val generator = (project in file("generator"))
   .enablePlugins(SbtWeb)
   .settings(
     commonSettings,
-    name := "Benchmark Suite Visualisation Generator",
+    name := "PLDS Website Generator",
     libraryDependencies ++= Seq(
       "org.rogach" %% "scallop" % "3.3.2",
       "com.lihaoyi" %% "scalatags" % "0.8.2",
