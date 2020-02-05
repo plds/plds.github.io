@@ -1,0 +1,36 @@
+.plds-titleBackground{
+  background-color: rgb(0,0,0,0.7);
+  border-radius: 0px 15px 0px 0px;
+  display: inline-block;
+  padding: 1em;
+}
+
+.plds-titleText{
+  color: white;
+  font-size: 2em;
+  text-align: left;
+}
+
+.plds-subtitleText{
+  color: white;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.plds-timeLocationText{
+  color: white;
+  font-size: 1.0em;
+  text-align: left;
+}
+
+.plds-headline{
+  text-decoration: underline;
+}
+
+.plds-hidden{
+  display: none;
+}
+
+.plds-mainContent{
+  padding-top: 1em;
+}
