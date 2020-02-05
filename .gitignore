@@ -1,8 +1,0 @@
-
-deploy/
-target/
-
-.bloop
-.metals
-
-metals.sbt
