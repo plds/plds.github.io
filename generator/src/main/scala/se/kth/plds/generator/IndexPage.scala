@@ -33,7 +33,7 @@ class IndexPage {
     h5("Note"),
     p(
       BootstrapStyle.textJustify,
-      "The workshop is collocated with the public Ph.D. defence of Lars, which will take place at KTH Electrum in the afternoon of March 6th, beginning at 13:00."
+      "The workshop is collocated with the public Ph.D. defence of Lars Kroll, which will take place at KTH Electrum in the afternoon of March 6th, beginning at 13:00."
     ),
     h4("Contact"),
     p(
