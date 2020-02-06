@@ -39,6 +39,7 @@ object BootstrapStyle {
   val imgFluid = cls := "img-fluid";
   val textJustify = cls := "text-justify";
   val textCentre = cls := "text-center";
+  val textNoWrap = cls := "text-nowrap";
   val textLight = cls := "text-light";
   val textMuted = cls := "text-muted";
 

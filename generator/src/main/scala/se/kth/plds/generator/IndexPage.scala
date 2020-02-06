@@ -26,16 +26,23 @@ class IndexPage {
       BootstrapStyle.textJustify,
       "A closed workshop event that brings together fundamental research talks and discussions within the intersection of programming languages and (distributed) systems."
     ),
-    h4("Note"),
     p(
       BootstrapStyle.textJustify,
-      "The workshop is collocated with the public Ph.D. defence of Lars, which will take place at KTH Electrum in the afternoon of March 6th."
+      "Day 1 (March 5th) will consist of an afternoon session between 13:00 and 18:00, and Day 2 (March 6th) will feature a morning session from 09:00 to 12:00."
     ),
-    h3("Contact"),
+    h5("Note"),
     p(
       BootstrapStyle.textJustify,
-      "If you have any problems, inquiries or questions, you can send an e-mail to ",
-      a(href := "mailto:lkroll@kth.se", i(cls := "fa fa-envelope-o fa-fw", aria.hidden := true), "lkroll@kth.se")
+      "The workshop is collocated with the public Ph.D. defence of Lars, which will take place at KTH Electrum in the afternoon of March 6th, beginning at 13:00."
+    ),
+    h4("Contact"),
+    p(
+      //BootstrapStyle.textJustify,
+      "If you have any problems, inquiries or questions, please feel free to send an e-mail to ",
+      a(BootstrapStyle.textNoWrap,
+        href := "mailto:lkroll@kth.se",
+        i(cls := "fa fa-envelope-o fa-fw", aria.hidden := true),
+        "lkroll@kth.se")
     )
   );
   lazy val right = div(
