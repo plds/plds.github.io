@@ -85,8 +85,9 @@ In this talk, we argue that, due to economic constraints, such a design is unlik
   val paris = Talk(
     "Paris Carbone",
     "RISE Research Institutes of Sweden",
-    "TBD",
-    ""
+    "Seamless Batch and Stream Computation on Heterogeneous Hardware with Arcon",
+    """Contemporary end-to-end data pipelines need to combine many diverse workloads (data stream analytics, ML training, graph algorihms etc.). For each of these types of workloads exist several frontends today exposed in different programming languages as well as runtimes tailored to support a respective frontend and possibly a hardware architecture (e.g., GPUs). The resulting pipelines suffer in terms of complexity and performance due to excessive type conversions, full materialization of intermediate results and lack of cross-frontend computation sharing capabilities.<br/>
+In this talk we introduce the Arcon system, the core principles behind it and our past work that influenced its conception. Arcon aims to provide a unified approach to declare and execute analytical tasks across data type-boundaries. The system achieves that through Arc, an intermediate language that captures batch and stream transformations as well as a task-driven distributed runtime facilitated by Kompact, a Rust actor framework."""
   );
 
   val philipp = Talk(
