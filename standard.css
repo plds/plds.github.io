@@ -34,3 +34,9 @@
 .plds-mainContent{
   padding-top: 1em;
 }
+
+.plds-smallerPaddingHeader{
+  padding-bottom: 0px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
