@@ -69,7 +69,10 @@ class IndexPage {
     // p("Test")
   );
 
-  val news: Seq[NewsItem] = Seq(NewsItem("5 February, 2020", "Website published"));
+  val news: List[NewsItem] = List(
+    NewsItem("27 February, 2020", "Preliminary programme published"),
+    NewsItem("5 February, 2020", "Website published")
+  );
 }
 
 case class NewsItem(date: String, content: String)
