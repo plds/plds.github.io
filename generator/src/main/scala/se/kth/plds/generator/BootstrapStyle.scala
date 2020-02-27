@@ -5,16 +5,23 @@ import scalatags.Text.all._
 object BootstrapStyle {
 
   val active = cls := "active";
+  val accordion = cls := "accordion";
   val alert = cls := "alert";
   val alertInfo = cls := "alert-info";
   val bgLight = cls := "bg-light";
   val bgDark = cls := "bg-dark";
+  val collapse = cls := "collapse";
   val container = cls := "container";
   val containerFluid = cls := "container-fluid";
   val display1 = cls := "display-1";
   val display2 = cls := "display-2";
   val display3 = cls := "display-3";
+  val display4 = cls := "display-4";
+  val display5 = cls := "display-5";
   val floatRight = cls := "float-right";
+  val fontWeightBold = cls := "font-weight-bold";
+  val fontWeightLight = cls := "font-weight-light";
+  val fontItalic = cls := "font-italic";
   val label = cls := "label";
   val lead = cls := "lead";
   val listGroup = cls := "list-group";
@@ -32,6 +39,7 @@ object BootstrapStyle {
   val navLink = cls := "nav-link";
   val flexColumn = cls := "flex-column";
   val btn = cls := "btn";
+  val btnLink = cls := "btn-link";
   val btnSecondary = cls := "btn-secondary";
   val btnSmall = cls := "btn-sm";
   val shadow = cls := "shadow";

@@ -17,6 +17,11 @@ object Frame {
            integrity := "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=",
            crossorigin := "anonymous"),
     script(src := "https://kit.fontawesome.com/fed54ae85d.js", crossorigin := "anonymous"),
+    script(
+      src := "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",
+      integrity := "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6",
+      crossorigin := "anonymous"
+    ),
     script(src := "plds-website-frontend.js")
   );
 

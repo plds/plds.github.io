@@ -44,4 +44,10 @@ object StandardStyle extends StyleSheet {
   val mainContent = cls(
     paddingTop := 1.em
   );
+
+  val smallerPaddingHeader = cls(
+    paddingBottom := 0,
+    paddingLeft := 0.5.em,
+    paddingRight := 0.5.em
+  );
 }

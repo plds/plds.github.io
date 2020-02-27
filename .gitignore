@@ -6,3 +6,5 @@ target/
 .metals
 
 metals.sbt
+
+*.code-workspace

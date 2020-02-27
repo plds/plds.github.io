@@ -38,7 +38,7 @@ object Main extends StrictLogging {
       _standard <- textToFile(StandardStyle.styleSheetText, "standard.css", target);
       _titleimage <- resourceToFile("public/titleimage.jpg", "titleimage.jpg", target);
       _venue <- textToFile((new VenuePage).generate(), VenuePage.file, target);
-      _programme <- textToFile((new ProgrammePage).generate(), ProgrammePage.file, target);
+      _programme <- textToFile((new ProgrammePage(Talks.list)).generate(), ProgrammePage.file, target);
       index <- textToFile((new IndexPage).generate(), IndexPage.file, target)
     } yield index;
     index_res match {
