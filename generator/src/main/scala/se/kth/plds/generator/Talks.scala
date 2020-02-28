@@ -114,7 +114,12 @@ In this talk we introduce the Arcon system, the core principles behind it and ou
 In this presentation, we discuss recent research results we achieved in this context at various levels. We describe an innovative programming framework that improves and simplifies the design of data-intensive applications. We also present the use of our programming framework on real-world case studies, emphasizing how to achieve fault tolerance and data consistency. Finally, we propose how to account for privacy in the software engineering process for data-intensive distributed applications."""
   );
 
-  val saranya = Talk("Saranya Natarajan", "KTH Royal Institute of Technology", "TBD", "");
+  val saranya = Talk(
+    "Saranya Natarajan",
+    "KTH Royal Institute of Technology",
+    "A Programming Language and End-To-End Toolchain for Real-Time Systems",
+    """Complex real-time systems are traditionally developed in several disjoint steps: (i) decomposition of applications into sets of recurrent tasks, (ii) worst-case execution time estimation, and (iii) schedulability analysis. Each step is already in itself complex and error-prone, and the composition of all three poses a nontrivial integration problem. In particular, it is challenging to obtain an end- to-end analysis of timing properties of the whole system due to practical differences between the interfaces of tools for extracting task models, execution time analysis, and schedulability tests. In this talk, we first introduce a programming language for real-time system called Timed C. We then introduce a seamless and pragmatic end-to-end compilation and timing analysis toolchain. The toolchain takes a Timed C program and automatically translates the timing primitives into executable code, measures execution times, verifies temporal correctness using an extended schedulability test, and performs sensitivity analysis. """
+  );
 
   val jim = Talk(
     "Jim Dowling",
