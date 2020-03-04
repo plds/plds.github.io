@@ -34,11 +34,11 @@ object Talks {
     jim.asSlot("06 09:00".toConfDate, 30.minutes),
     guido.asSlot("06 09:30".toConfDate, 30.minutes),
     saranya.asSlot("06 10:00".toConfDate, 30.minutes),
-    undecided.asSlot("06 10:30".toConfDate, 30.minutes), // Heather?
+    coffee.asSlot("06 10:30".toConfDate, 30.minutes),
     kostis.asSlot("06 11:00".toConfDate, 60.minutes)
   );
 
-  val undecided = Talk("Reserved Slot", "", "TBD", "");
+  //val undecided = Talk("Reserved Slot", "", "TBD", "");
 
   val coffee = Talk("Coffee, tea, and cookies will be served in the workshop room.", "", "Coffee Break", "");
 

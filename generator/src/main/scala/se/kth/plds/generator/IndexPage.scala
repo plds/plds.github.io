@@ -70,6 +70,7 @@ class IndexPage {
   );
 
   val news: List[NewsItem] = List(
+    NewsItem("4 March, 2020", "Final programme published"),
     NewsItem("27 February, 2020", "Preliminary programme published"),
     NewsItem("5 February, 2020", "Website published")
   );
