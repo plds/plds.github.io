@@ -47,15 +47,20 @@ class ProgrammePage(val talks: List[TalkSlot] = Nil) {
             BootstrapStyle.cardHeader,
             StandardStyle.smallerPaddingHeader,
             id := s"heading-${idExtension}-talk${talkIndex}",
-            h6(span(BootstrapStyle.fontItalic, talk.startTimeOnly, span(raw(" - ")), talk.endTimeOnly),
-               span(raw("&nbsp;&nbsp;&nbsp;")),
-               talk.talk.title),
+            h6(
+              span(BootstrapStyle.fontItalic, talk.startTimeOnly, span(raw(" - ")), talk.endTimeOnly),
+              span(raw("&nbsp;&nbsp;&nbsp;")),
+              talk.talk.title,
+              if (!talk.talk.slides.isEmpty) {
+                span(raw("&nbsp;&nbsp;&nbsp;"), a(href := talk.talk.slides.get, i(cls := "far fa-file-powerpoint")))
+              }
+            ),
             span(talk.talk.speaker),
             span(raw(" ")),
-            if (!talk.talk.affiliation.isEmpty()) {
+            if (!talk.talk.affiliation.isEmpty) {
               span(BootstrapStyle.textMuted, "(", talk.talk.affiliation, ")")
             },
-            if (!talk.talk.`abstract`.isEmpty()) {
+            if (!talk.talk.`abstract`.isEmpty) {
               div(
                 BootstrapStyle.floatRight,
                 BootstrapStyle.textMuted,
@@ -71,7 +76,7 @@ class ProgrammePage(val talks: List[TalkSlot] = Nil) {
               )
             }
           ),
-          if (!talk.talk.`abstract`.isEmpty()) {
+          if (!talk.talk.`abstract`.isEmpty) {
             div(
               BootstrapStyle.collapse,
               id := s"abstract-${idExtension}-talk${talkIndex}",

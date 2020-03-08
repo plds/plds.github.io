@@ -37,6 +37,7 @@ object Main extends StrictLogging {
       _bootstrap <- resourceToFile("public/bootstrap.min.css", "bootstrap.min.css", target);
       _standard <- textToFile(StandardStyle.styleSheetText, "standard.css", target);
       _titleimage <- resourceToFile("public/titleimage.jpg", "titleimage.jpg", target);
+      _slides <- slidesToFolder("slides", target);
       _venue <- textToFile((new VenuePage).generate(), VenuePage.file, target);
       _programme <- textToFile((new ProgrammePage(Talks.list)).generate(), ProgrammePage.file, target);
       index <- textToFile((new IndexPage).generate(), IndexPage.file, target)
@@ -122,6 +123,42 @@ object Main extends StrictLogging {
     output.close();
     res
   }
+
+  private def slidesToFolder(outputName: String, target: File): Try[Unit] =
+    Try {
+      val newTarget = target.toPath().resolve(outputName).toFile();
+      assert(newTarget.mkdirs(), s"Could not create folder ${newTarget.getAbsolutePath()}");
+      Talks.list.foldLeft(Try(()))((acc, talk) => {
+        talk.talk.slides match {
+          case Some(s) if s.startsWith("slides") => {
+            val resource = s"public/$s";
+            resourceToFile(resource, s.substring(7), newTarget).map(_ => ())
+          }
+          case _ => acc
+        }
+      })
+    }.flatten
+
+  // private def filesToFolder(inputName: String, outputName: String, target: File): Try[File] = {
+  //   Try {
+  //     val inputFolder = Paths.get(s"../files/$inputName").toFile;
+  //     assert(inputFolder.exists(), s"Input folder ${inputFolder.getAbsolutePath()} does not exist");
+  //     assert(inputFolder.isDirectory(), s"Input path $inputFolder does not describe a directory");
+  //     assert(inputFolder.canWrite(), s"Can't write input folder $inputFolder");
+  //     val file = target.toPath().resolve(outputName).toFile();
+  //     assert(file.mkdirs(), s"Could not create folder $file");
+  //     val res = inputFolder
+  //       .listFiles()
+  //       .foldLeft(Try(()))((acc, sourceFile) => {
+  //         acc.flatMap(_ =>
+  //           Try {
+  //             java.nio.file.Files.copy(sourceFile.toPath(), file.toPath.resolve(sourceFile.getName()));
+  //           }
+  //         )
+  //       });
+  //     res.map(_ => file)
+  //   }.flatten
+  // }
 
   private def resourceToFile(resource: String, name: String, target: File): Try[File] = {
     var inputStream = this
