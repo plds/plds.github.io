@@ -137,6 +137,6 @@ In this presentation, we discuss recent research results we achieved in this con
     "Logical Clocks/KTH Royal Institute of Technology",
     "Towards Distribution Transparency for Supervised ML With Oblivious Training Functions",
     """Building and productionizing Machine Learning (ML) models is a process of interdependent steps of iterative code updates, including exploratory model design, hyperparameter tuning, ablation experiments, and model training. Industrial-strength ML involves doing this at scale, using many compute resources, and this requires rewriting the training code to account for distribution. The result is that moving from a single host program to a cluster hinders iterative development of the software, as iterative development would require multiple versions of the software to be maintained and kept consistent. In this talk, we introduce the distribution oblivious training function as an abstraction for ML development in Python, whereby developers can reuse the same training function when running a notebook on a laptop or performing scale-out hyperparameter search and distributed training on clusters. Programs written in our framework look like industry-standard ML programs as we factor out dependencies using best-practice programming idioms (such as functions to generate models and data batches). We believe that our approach takes a step towards unifying single-host and distributed ML development.""",
-    None
+    Some("slides/Distribution-Oblivious-Training-Functions.pdf")
   )
 }
