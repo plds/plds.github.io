@@ -121,7 +121,7 @@ In this talk we introduce the Arcon system, the core principles behind it and ou
     "Why languages for distributed systems are inevitable",
     """Over the last few years, ubiquitous connectivity has led to data being constantly generated at an unprecedented rate. As a result, large amounts of data are constantly being processed in a heterogeneous infrastructure which stems from the convergence of edge (IoT, mobile) and cloud computing. This poses fundamental challenges in software design, especially with respect to fault tolerance, data consistency, and privacy.<br />
 In this presentation, we discuss recent research results we achieved in this context at various levels. We describe an innovative programming framework that improves and simplifies the design of data-intensive applications. We also present the use of our programming framework on real-world case studies, emphasizing how to achieve fault tolerance and data consistency. Finally, we propose how to account for privacy in the software engineering process for data-intensive distributed applications.""",
-    None
+    Some("slides/plds-salvaneschi.pdf")
   );
 
   val saranya = Talk(
