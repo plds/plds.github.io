@@ -102,7 +102,7 @@ In this talk we introduce the Arcon system, the core principles behind it and ou
     "KTH Royal Institute of Technology",
     "Selected challenges in concurrent and distributed programming",
     """We present three challenges in concurrent and distributed programming, as well as recent results addressing them. The first challenge consists of ensuring fault-tolerance properties in typed programming languages. The main question is how to enforce fault-tolerance properties for well-typed programs, as opposed to specific algorithms or systems. Towards addressing this question, we present the first correctness results for a typed calculus with first-class lineages. The second challenge consists of using data with different consistency properties safely within the same distributed application. To address this challenge, we propose a novel type system which provides a noninterference guarantee: mutations of potentially-inconsistent data cannot be observed via access to consistent data types. As a third challenge we propose the design of a concurrent domain-specific language for parallelizing static analysis problems.""",
-    None
+    Some("slides/Haller2020-PLDS-KTH.pdf")
   );
 
   val kostis = Talk(
