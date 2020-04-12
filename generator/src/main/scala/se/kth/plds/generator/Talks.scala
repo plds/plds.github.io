@@ -68,7 +68,7 @@ object Talks {
     "Dark silicon — a currency we do not control",
     """The breakdown of dennard scaling changed the game of processor design: no longer can the entire die be filled with “always-on” components — some regions must be powered up and down at runtime to prevent the chip from overheating. Such “dim” or “dark” silicon is the new currency of chip design, raising the question: what functionality should be implemented in dark silicon? Viable candidates are any non-essential units that support important applications. Naturally, database researchers were quick to claim this resource, arguing that it should be used to implement instructions and primitives supporting database workloads.<br />
 In this talk, we argue that, due to economic constraints, such a design is unlikely to be implemented in mainstream server chips. Instead, chip designers will spend silicon on high-volume market segments such as AI, Security or Graphics/AR which require a different set of primitives. Consequently, database researchers need to find uses for the actual functionality of chips rather than wishing for features that are economically infeasible. Let us develop innovative ways to exploit the “hardware we have, not the hardware we wish to have at a later time”. In the talk, we discuss examples of creative use of hardware for data management purposes such as TLBs for MVCC, Transactional Memory for statistics collection and hardware graphics shaders for data analytics. We also highlight some processor functionality that still calls for creative use such as many floating point instructions, integrated sound processors and some of the model-specific registers.""",
-    None
+    Some("slides/KTHTalk-pirk.pdf")
   );
 
   val peter = Talk(
